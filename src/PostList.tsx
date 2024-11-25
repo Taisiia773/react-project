@@ -32,7 +32,8 @@ export function PostList(){
                         description={post.description}
                         img={post.img}
                         author={post.author}
-                        key={post.id}></Post>
+                        key={post.id}
+                        ></Post>
             })}
         </div>
     )
