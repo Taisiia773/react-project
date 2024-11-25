@@ -26,7 +26,7 @@ export function Post(props: IPosttProps){
             <img src={props.img} alt={props.name} />
             <p>{props.author}</p>
 
-            <h2>like: {amount}</h2>
+            <p>like: {amount}</p>
             <button onClick={removeOneLike} disabled={amount === 0}>
                 -
             </button>
