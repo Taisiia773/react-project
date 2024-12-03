@@ -1,0 +1,5 @@
+.posts {
+    display: flex;
+    gap: 3%;
+    margin: 10px;
+}
