@@ -1,7 +1,6 @@
 import "./Header.css"
 
 export function Header(){
-    // const [count, setCount] = useState(0) // useState принимает инициальное значение
     return (
         <div>
                 <header>
