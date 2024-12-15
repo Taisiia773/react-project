@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useParams } from "react-router-dom";
 import "./Post.css"
 
 interface IPosttProps{
@@ -9,6 +10,8 @@ interface IPosttProps{
 }
 
 export function Post(props: IPosttProps){
+    const params = useParams()
+
     const [amount, setAmount] = useState(0)
     const [isLiked, setIsLiked] = useState(false)
 

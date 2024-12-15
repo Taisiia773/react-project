@@ -1,16 +1,25 @@
 import { Layout } from "./layout/Layout"
-import { Main } from "./main/Main"
-import { Footer } from './footer/Footer'
-import { Header } from "./header/Header"
+import {
+    BrowserRouter,
+    Routes,
+    Route
+} from "react-router-dom"
+import { PostList } from "./postList/PostList"
+import { PostPage } from "./postPage/PostPage"
+
 
 export function AppComponent(){
+
     return (
         <div>
-            <Layout>
-                <Header></Header>
-                <Main></Main>
-                <Footer></Footer>
-            </Layout>
+            <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Layout></Layout>}>
+                    <Route path="/posts" element={<PostList></PostList>}></Route>
+                    <Route path = "/post/:id" element = {<PostPage></PostPage>}> </Route>
+                </Route>
+            </Routes>
+            </BrowserRouter>
         </div>
     )
 }
